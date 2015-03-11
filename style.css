@@ -1,10 +1,12 @@
 
 body, html, main {
-  height: 100%;
+  height: 100vh;
+  font-family: 'Source Code Pro';
+  font-weight: 200;
 }
 
 .main {
-  height: 100%;
+  height: 100vh;
   position: relative;
   z-index: 1;
 }
@@ -18,7 +20,7 @@ body, html, main {
 
 .fixed-bg {
   position: relative;
-  min-height: 100%;
+  min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -31,28 +33,38 @@ body, html, main {
   top: 50%;
   bottom: auto;
   right: auto;
-  width: 90%;
+  width: 100%;
   text-align: center;
   font-size: 2.5rem;
+  font-weight: 500;
   color: white;
+  text-transform: uppercase;
+}
+
+.fixed-bg.bg-0 {
+  background-image: url("img/bg-0.jpg")
 }
 
 .fixed-bg.bg-1 {
   background-image: url("img/bg-1.jpeg")
 }
 
+.fixed-bg.bg-2 {
+  background-image: url("img/bg-2.jpeg")
+}
+
 .scroll-bg {
   position: relative;
-  min-height: 10%;
+  min-height: 10vh;
   padding: 4em 0;
   line-height: 1.6;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
 
 .scroll-bg.bg-color-1 {
-  background-color: #009FC1;
-  color: #c5c5c5;
+  background-color: #676767;
+  color: #EFEFEF;
 }
 
 @media only screen and (min-width: 768px) {
@@ -63,4 +75,11 @@ body, html, main {
     line-height: 2;
     font-weight: 300;
   }
+}
+
+.nav {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  height: 10vh;
 }
