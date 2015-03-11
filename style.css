@@ -1,0 +1,66 @@
+
+body, html, main {
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.container{
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+
+.fixed-bg {
+  position: relative;
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+
+.fixed-bg h1{
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  width: 90%;
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.fixed-bg.bg-1 {
+  background-image: url("img/bg-1.jpeg")
+}
+
+.scroll-bg {
+  position: relative;
+  min-height: 10%;
+  padding: 4em 0;
+  line-height: 1.6;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.scroll-bg.bg-color-1 {
+  background-color: #009FC1;
+  color: #c5c5c5;
+}
+
+@media only screen and (min-width: 768px) {
+  .scroll-bg {
+    padding: 8em 0;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 2;
+    font-weight: 300;
+  }
+}
