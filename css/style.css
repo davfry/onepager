@@ -42,27 +42,27 @@ body, html, main {
 }
 
 .fixed-bg.bg-0 {
-  background-image: url("img/bg-0.jpg")
+  background-image: url("../img/bg-0.jpg")
 }
 
 .fixed-bg.bg-1 {
-  background-image: url("img/bg-1.jpeg")
+  background-image: url("../img/bg-1.jpeg")
 }
 
 .fixed-bg.bg-2 {
-  background-image: url("img/bg-2.jpeg")
+  background-image: url("../img/bg-2.jpeg")
 }
 
 .fixed-bg.bg-3 {
-  background-image: url("img/bg-3.jpeg")
+  background-image: url("../img/bg-3.jpeg")
 }
 
 .fixed-bg.bg-4 {
-  background-image: url("img/bg-4.jpeg")
+  background-image: url("../img/bg-4.jpeg")
 }
 
 .fixed-bg.bg-5 {
-  background-image: url("img/bg-5.jpeg")
+  background-image: url("../img/bg-5.jpeg")
 }
 
 
@@ -105,5 +105,14 @@ body, html, main {
 }
 
 .button {
-  
+  background: transparent;
+  color: #837d92;
+  border-color: #837d92;
+  border: 2px solid;
+  margin: auto;
+}
+
+.button:hover {
+  border-color: #997add;
+  color: #997add;
 }
